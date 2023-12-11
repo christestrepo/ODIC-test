@@ -31,12 +31,12 @@
       "statusCode": 404
     },
     {
-      "route": "/*",
-      "allowedRoles": ["authenticated"]
+      "route": "/.auth/*",
+      "allowedRoles": ["anonymous","authenticated"]
     },
     {
-      "route": "/login",
-      "redirect": "/.auth/login/auth0"
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
     }
   ],
   "responseOverrides": {
